@@ -5,7 +5,7 @@
 - [Pre-requisites](#pre-requisites)
 - [Software Dependencies](#software-dependencies)
 - [Project structure](#project-structure)
-- [Terraform module structure](#terraform-module-structure)
+	- [Terraform module structure](#terraform-module-structure)
 
 ## Introduction
 How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
@@ -31,7 +31,7 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
 ![image](https://user-images.githubusercontent.com/94529299/158328000-a1ed36b0-41b6-40e1-90ed-1a9f390b87fd.png)
 
 
-## Terraform module structure
+### Terraform module structure
 
 ![image](https://user-images.githubusercontent.com/94529299/158328623-01f1f965-8456-4654-af91-7294787e90d4.png)
 
