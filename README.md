@@ -1,2 +1,1 @@
-# WescoStandardAKSCluster
-WescoStandardAKSCluster
+# Define AKS cluster with Terraform
