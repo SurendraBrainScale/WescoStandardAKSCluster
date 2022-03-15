@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
 - [Software Dependencies](#software-dependencies)
+- [Steps](#Steps)
 - [Project structure](#project-structure)
 	- [Terraform module structure](#terraform-module-structure)
 
@@ -17,6 +18,13 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
 - Terraform
 - Terraform Azure Provider plugin
 - Visual Studio Code Editor(Optional)
+
+## Steps
+- Step1: Define an AKS Kubernetes cluster with Terraform
+- Step2: Set up Azure storage to store Terraform state
+- Step3: Create the Kubernetes cluster
+- Step4: Test the Kubernetes cluster
+- Step5: Monitoring and logs
 
 ## Project structure  
 
