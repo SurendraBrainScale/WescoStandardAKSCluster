@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
 - [Software Dependencies](#software-dependencies)
-- [Steps](#Steps)
+- [Steps](#steps)
 - [Project structure](#project-structure)
 	- [Terraform module structure](#terraform-module-structure)
 
