@@ -20,7 +20,7 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
 
 ## Project structure  
 
-- **modules**: represent here in this layout the Terraform modules (general re-used functions) . In this lab, we have basically 4 modules:
+- **modules**: represent here in this layout the Terraform modules (general re-used functions) . We have basically 4 modules:
 	 - [ ] **aks_cluster**: the main unit providing the AKS service
 	 - [ ] **aks_identities**: the cluster identity unit that manage the cluster service principal
 	 - [ ] **aks_network**: Create the cluster Virtual Network and subnetwork on Azure
