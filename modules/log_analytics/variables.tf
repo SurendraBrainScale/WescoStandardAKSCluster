@@ -1,5 +1,5 @@
 variable resource_group_name {
-    default = "Run IT on Cloud"
+    default = "Azure AKS"
 }
 
 variable log_analytics_workspace_name {

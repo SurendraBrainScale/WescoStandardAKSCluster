@@ -5,7 +5,7 @@ variable "subnet_name" {
 
 variable "resource_group_name" {
   description = "resource group that the vnet resides in"
-  default     = "Run IT on Cloud"
+  default     = "Azure AKS"
 }
 
 variable "vnet_name" {
