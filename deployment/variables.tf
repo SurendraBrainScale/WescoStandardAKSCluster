@@ -12,51 +12,51 @@ variable "dns_prefix" {
   default     = "azureAKS"
 }
 
-variable cluster_name {
+variable "cluster_name" {
   description = "AKS cluster name"
   default     = "azureAKS"
 }
 
-variable resource_group_name {
+variable "resource_group_name" {
   description = "name of the resource group to deploy AKS cluster in"
   default     = "azureAKS"
 }
 
-variable location {
+variable "location" {
   description = "azure location to deploy resources"
   default     = "westeurope"
 }
 
-variable log_analytics_workspace_name {
+variable "log_analytics_workspace_name" {
   default = "testLogAnalyticsWorkspaceName"
 }
 
 # refer https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
-variable log_analytics_workspace_location {
+variable "log_analytics_workspace_location" {
   default = "eastus"
 }
 
 # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing
-variable log_analytics_workspace_sku {
+variable "log_analytics_workspace_sku" {
   default = "PerGB2018"
 }
 
-variable subnet_name {
+variable "subnet_name" {
   description = "subnet id where the nodes will be deployed"
   default     = "azureAKS-subnet"
 }
 
-variable vnet_name {
+variable "vnet_name" {
   description = "vnet id where the nodes will be deployed"
   default     = "azureAKS-vnet"
 }
 
-variable subnet_cidr {
+variable "subnet_cidr" {
   description = "the subnet cidr range"
   default     = "10.2.32.0/21"
 }
 
-variable kubernetes_version {
+variable "kubernetes_version" {
   description = "version of the kubernetes cluster"
   default     = "1.16.10"
 }
