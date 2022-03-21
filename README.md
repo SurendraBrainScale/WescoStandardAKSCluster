@@ -158,3 +158,29 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs) - utility to generate docs from terraform modules
 - [tfsec](https://github.com/aquasecurity/tfsec) - Terraform static analysis tool
 - [tflint](https://github.com/terraform-linters/tflint) - Terraform linter for detecting errors that can not be detected by terraform plan
+
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+No providers.
+
+## Modules
+
+No modules.
+
+## Resources
+
+No resources.
+
+## Inputs
+
+No inputs.
+
+## Outputs
+
+No outputs.
+<!-- END_TF_DOCS -->
