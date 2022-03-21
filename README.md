@@ -11,16 +11,16 @@
 # AKS Cluster - Wesco Standards
 ![image](https://i0.wp.com/build5nines.com/wp-content/uploads/2020/11/Terraform_Azure_Kubernetes_Cluster_AKS_Featured_Image.jpg?fit=900%2C506&ssl=1)
 - [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
-	- [**Introduction**](#introduction)
-	- [**Pre-requisites**](#pre-requisites)
-	- [**Software Dependencies/Tools**](#software-dependenciestools)
-	- [**Steps**](#steps)
-	- [**Project structure**](#project-structure)
-		- [**Terraform module structure**](#terraform-module-structure)
-		- [**Checklist**](#checklist)
+	- [Introduction](#introduction)
+	- [Pre-requisites](#pre-requisites)
+	- [Software Dependencies/Tools](#software-dependenciestools)
+	- [Steps](#steps)
+	- [Project structure](#project-structure)
+		- [Terraform module structure](#terraform-module-structure)
+		- [Checklist](#checklist)
 	- [**References - Utilities**](#references---utilities)
 
-## **Introduction**
+## Introduction
 How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. The AKS cluster in this guide supports the following features:
 
 - AKS-managed Azure Active Directory integration
@@ -32,25 +32,25 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 - Availability Zone Configuration
 - Azure Policy for Kubernetes
 
-## **Pre-requisites**
+## Pre-requisites
 - Azure Subscription
 - Terraform Cloud Account
 
-## **Software Dependencies/Tools**
+## Software Dependencies/Tools
 - Terraform (IAC)
 - Terraform Azure Provider plugin(Extension)
 - Visual Studio Code Editor(Optional)
 - Terraform Lint
 - Terraform docs
 
-## **Steps**
+## Steps
 - Step1: Define an AKS Kubernetes cluster with Terraform
 - Step2: Set up terraform cloud structurestore Terraform state/Terraform Workspace
 - Step3: Create the Kubernetes cluster
 - Step4: Test the Kubernetes cluster
 - Step5: Monitoring and logs
 
-## **Project structure**  
+## Project structure
 
 - **modules**: represent here in this layout the Terraform modules (general re-used functions) . We have basically 4 modules:
 	 - [ ] **aks_cluster**: the main unit providing the AKS service
@@ -63,7 +63,7 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 ![image](https://user-images.githubusercontent.com/94529299/158328000-a1ed36b0-41b6-40e1-90ed-1a9f390b87fd.png)
 
 
-### **Terraform module structure**
+### Terraform module structure
 
 ![image](https://user-images.githubusercontent.com/94529299/158328623-01f1f965-8456-4654-af91-7294787e90d4.png)
 
@@ -72,7 +72,7 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 	 - [ ] **variables.tf**: In Terraform, modules can have input parameters, too. To define them, you use a mechanism input  	variables.
 	 - [ ] **output.tf**: In Terraform, a module can also return values. Again, this is done using a mechanism: output variables.
 
-### **Checklist**
+### Checklist
 
 **SNo**|**Category**|**Priority**|**Standard**|**Config Owner**|**Comments**|**Status**|**Remediation**|**Recommendation**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
