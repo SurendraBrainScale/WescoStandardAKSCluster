@@ -1,12 +1,22 @@
 
+[![RepoVisits](https://badges.pufler.dev/visits/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
+[![Created Badge](https://badges.pufler.dev/created/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
+![GitHub language count](https://img.shields.io/github/languages/count/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic)
+
 # AKS Cluster - Wesco Standards
 
-- [Introduction](#introduction)
-- [Pre-requisites](#pre-requisites)
-- [Software Dependencies](#software-dependencies)
-- [Steps](#steps)
-- [Project structure](#project-structure)
-	- [Terraform module structure](#terraform-module-structure)
+- [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
+	- [Introduction](#introduction)
+	- [Pre-requisites](#pre-requisites)
+	- [Software Dependencies](#software-dependencies)
+	- [Steps](#steps)
+	- [Project structure](#project-structure)
+		- [Terraform module structure](#terraform-module-structure)
 
 ## Introduction
 How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
@@ -21,7 +31,7 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards
 
 ## Steps
 - Step1: Define an AKS Kubernetes cluster with Terraform
-- Step2: Set up Azure storage to store Terraform state
+- Step2: Set up Azure storage to store Terraform state/Terraform Workspace
 - Step3: Create the Kubernetes cluster
 - Step4: Test the Kubernetes cluster
 - Step5: Monitoring and logs
