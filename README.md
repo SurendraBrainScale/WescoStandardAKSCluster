@@ -17,7 +17,7 @@
 	- [Project structure](#project-structure)
 		- [Terraform module structure](#terraform-module-structure)
 		- [Checklist](#checklist)
-	- [**References - Utilities**](#references---utilities)
+	- [References - Utilities](#references---utilities)
 
 ## Introduction
 How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. The AKS cluster in this guide supports the following features:
