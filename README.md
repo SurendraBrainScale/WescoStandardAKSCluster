@@ -9,7 +9,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic)
 
 # AKS Cluster - Wesco Standards
-![image](https://i0.wp.com/build5nines.com/wp-content/uploads/2020/11/Terraform_Azure_Kubernetes_Cluster_AKS_Featured_Image.jpg?fit=900%2C506&ssl=1)
 - [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
 	- [Introduction](#introduction)
 	- [Pre-requisites](#pre-requisites)
@@ -44,8 +43,8 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 - Terraform docs
 
 ## Steps
-- Step1: Define an AKS Kubernetes cluster with Terraform
-- Step2: Set up terraform cloud structurestore Terraform state/Terraform Workspace
+- Step1: Define an AKS Kubernetes cluster with Terraform as per the wesco standard
+- Step2: Set up terraform cloud structure to store state files in Terraform Workspace
 - Step3: Create the Kubernetes cluster
 - Step4: Test the Kubernetes cluster
 - Step5: Monitoring and logs
@@ -53,20 +52,21 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 ## Project structure
 
 - **modules**: represent here in this layout the Terraform modules (general re-used functions) . We have basically 4 modules:
-	 - [ ] **aks_cluster**: the main unit providing the AKS service
-	 - [ ] **aks_identities**: the cluster identity unit that manage the cluster service principal
-	 - [ ] **aks_network**: Create the cluster Virtual Network and subnetwork on Azure
-	 - [ ] **log_analytics**: Formally Azure Operational Insight is the unit that manages logs and cluster health checks.
+	 - **acr**: AKS Container Registry service
+	 - **aks_cluster**: the main unit providing the AKS service
+	 - **aks_network**: Create the cluster Virtual Network and subnetwork on Azure
+	 - **log_analytics**: Container Insights is the unit that manages logs and cluster health checks.
+	 - **privatednszone**: access the cluster in private dns zones
+	 - **privateendpoint**: private end 
 - **Deployment**: is the main function of this layout, responsible of the AKS Kubernetes cluster deployment on Azure. 
 - In main.tf we define the Terraform modules already created in /modules sub-folder with the appropriate inputs defined in variables.tf.
 
-![image](https://user-images.githubusercontent.com/94529299/158328000-a1ed36b0-41b6-40e1-90ed-1a9f390b87fd.png)
+![image](https://user-images.githubusercontent.com/94529299/159233449-60ae6979-e4da-48b8-816f-645f7b1bd59f.png)
+![image](https://user-images.githubusercontent.com/94529299/159234282-470df9e9-d257-4fb2-8073-f32cd9216f7f.png)
+![image](https://user-images.githubusercontent.com/94529299/159234400-e3cecfe3-c55c-4313-a97d-d4901643a7b5.png)
 
 
 ### Terraform module structure
-
-![image](https://user-images.githubusercontent.com/94529299/158328623-01f1f965-8456-4654-af91-7294787e90d4.png)
-
 - The module is a container for multiple resources that are used together.
 	 - [ ] **main.t**f: the aks cluster resources are packaged in the main.tf file
 	 - [ ] **variables.tf**: In Terraform, modules can have input parameters, too. To define them, you use a mechanism input  	variables.
