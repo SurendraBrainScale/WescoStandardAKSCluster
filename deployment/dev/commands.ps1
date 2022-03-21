@@ -16,6 +16,10 @@ terraform validate
 # plan and preview terraform changes
 terraform plan
 
+# Terraform Visual representation
+#terraform plan -out plan.out
+#terraform show -json plan.out > plan.json
+
 # deploy terraform infra
 terraform apply
 
