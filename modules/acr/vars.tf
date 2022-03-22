@@ -7,7 +7,7 @@ variable "resource_group" {
 }
 
 variable "acr_name" {
-  #default = "DemoACRArunupdated"
+  default = "DemoACRArunupdated"
   description = "ACR name"
 }
 

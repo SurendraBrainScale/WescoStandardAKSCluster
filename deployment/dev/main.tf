@@ -153,3 +153,8 @@ module "argo" {
     module.aks-cluster
   ]
 }
+
+# Future modules examples app, functionapp, etc.
+#module "futuremod"{
+#
+#}
