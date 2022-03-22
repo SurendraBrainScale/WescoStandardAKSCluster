@@ -1,8 +1,10 @@
+# Terraform Resource to Create Azure Resource Group
 resource "azurerm_resource_group" "aks" {
   name     = var.resource_group
   location = var.location
 }
 
+# Terraform Module for aks network
 module "aks-network" {
   source                      = "../../modules/aks-network"
   subnet_name                 = var.subnet_name
@@ -18,12 +20,14 @@ module "aks-network" {
   network_security_group_name = var.network_security_group_name
 }
 
+# Terraform Module for acr
 module "acr" {
   source     = "../../modules/acr"
   acr_name   = var.acr_name
   depends_on = [azurerm_resource_group.aks]
 }
 
+# Terraform Module for aks cluster
 module "aks-cluster" {
   source          = "../../modules/aks-cluster"
   cluster_name    = var.cluster_name
@@ -87,14 +91,14 @@ module "aks-cluster" {
   ]
 }
 
+# Terraform Resource for vnet
 resource "azurerm_role_assignment" "resourcegroup_vnet" {
   principal_id         = module.aks-cluster.identity
   scope                = azurerm_resource_group.aks.id
   role_definition_name = "Contributor"
 }
 
-#ACR Role assignment
-
+# Terraform Resource for ACR Role assignment
 resource "azurerm_role_assignment" "acrpull" {
   principal_id         = module.aks-cluster.kubeletIdentity
   scope                = module.acr.acr_id
@@ -103,6 +107,7 @@ resource "azurerm_role_assignment" "acrpull" {
   depends_on = [module.aks-cluster]
 }
 
+# Terraform module for ACR Private DNS zone    
 module "acr_private_dns_zone" {
   source                = "../../modules/privatednszone"
   private_dns_zone_name = "privatelink.azurecr.io"
@@ -115,6 +120,7 @@ module "acr_private_dns_zone" {
   ]
 }
 
+# Terraform module for ACR Private end point
 module "acr_private_endpoint" {
   source                         = "../../modules/privateendpoint"
   private_endpoint_name          = "${module.acr.acr_name}-PrivateEndpoint"
@@ -138,6 +144,7 @@ module "acr_private_endpoint" {
 #    depends_on = [module.aks-cluster]
 #  }
 
+# Terraform module for Argocd
 module "argo" {
   source              = "../../modules/argocd"
   resource_group_name = azurerm_resource_group.aks.name
