@@ -1,15 +1,9 @@
 
-[![RepoVisits](https://badges.pufler.dev/visits/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
-[![Updated Badge](https://badges.pufler.dev/updated/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
-[![Created Badge](https://badges.pufler.dev/created/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
-![GitHub language count](https://img.shields.io/github/languages/count/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic)
+[![RepoVisits](https://badges.pufler.dev/visits/SurendraBrainScale/WescoStandardAKSCluster)](https://badges.pufler.dev) ![GitHub top language](https://img.shields.io/github/languages/top/SurendraBrainScale/WescoStandardAKSCluster?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic) 
 
 [![Generate terraform docs](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml)
 [![tfsec](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/tfsec.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/tfsec.yml)
+[![Terraform](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/terraform.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/terraform.yml)
 
 # AKS Cluster - Wesco Standards
 - [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
