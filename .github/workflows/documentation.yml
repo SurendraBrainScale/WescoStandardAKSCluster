@@ -14,7 +14,7 @@ jobs:
       uses: terraform-docs/gh-actions@main
       with:
         #working-dir: .
-        working-dir: examples/
+        working-dir: deployment/
         recursive: true
         recursive-path: modules
         output-file: README.md
