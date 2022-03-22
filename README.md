@@ -8,6 +8,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/SurendraBrainScale/WescoStandardAKSCluster?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic)
 
+[![Generate terraform docs](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml)
+
 # AKS Cluster - Wesco Standards
 - [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
 	- [Introduction](#introduction)
