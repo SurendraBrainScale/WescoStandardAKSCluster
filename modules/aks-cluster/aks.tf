@@ -91,7 +91,7 @@ resource "azurerm_kubernetes_cluster" "cluster" {
       enabled = true
     }
 
-    #depends_on = [azuread_group.aks-aad-clusteradmins]
+    depends_on = [azuread_group.aks-aad-clusteradmins]
   }
 
 
