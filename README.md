@@ -9,6 +9,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/SurendraBrainScale/WescoStandardAKSCluster?color=red&style=plastic)
 
 [![Generate terraform docs](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/documentation.yml)
+[![tfsec](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/tfsec.yml/badge.svg)](https://github.com/SurendraBrainScale/WescoStandardAKSCluster/actions/workflows/tfsec.yml)
 
 # AKS Cluster - Wesco Standards
 - [AKS Cluster - Wesco Standards](#aks-cluster---wesco-standards)
