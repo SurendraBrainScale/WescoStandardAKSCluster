@@ -50,21 +50,21 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 - Step5: Monitoring and logs
 
 ## Project structure
+- **main**: deployment and modules folder contains the terraform scripts.
 
-- **modules**: represent here in this layout the Terraform modules (general re-used functions) . We have basically 4 modules:
+![image](https://user-images.githubusercontent.com/94529299/159233449-60ae6979-e4da-48b8-816f-645f7b1bd59f.png)
+- **Deployment**: [deployment](deployment) folder contains details of multiple environments such as dev, prod and qa. 
+
+![image](https://user-images.githubusercontent.com/94529299/159234282-470df9e9-d257-4fb2-8073-f32cd9216f7f.png)
+- **modules**: [modules](modules) represent here in this layout the Terraform modules (general re-used functions) . We have basically 4 modules:
 	 - **acr**: AKS Container Registry service
 	 - **aks_cluster**: the main unit providing the AKS service
 	 - **aks_network**: Create the cluster Virtual Network and subnetwork on Azure
 	 - **log_analytics**: Container Insights is the unit that manages logs and cluster health checks.
 	 - **privatednszone**: access the cluster in private dns zones
 	 - **privateendpoint**: private end 
-- **Deployment**: is the main function of this layout, responsible of the AKS Kubernetes cluster deployment on Azure. 
-- In main.tf we define the Terraform modules already created in /modules sub-folder with the appropriate inputs defined in variables.tf.
 
-![image](https://user-images.githubusercontent.com/94529299/159233449-60ae6979-e4da-48b8-816f-645f7b1bd59f.png)
-![image](https://user-images.githubusercontent.com/94529299/159234282-470df9e9-d257-4fb2-8073-f32cd9216f7f.png)
 ![image](https://user-images.githubusercontent.com/94529299/159234400-e3cecfe3-c55c-4313-a97d-d4901643a7b5.png)
-
 
 ### Terraform module structure
 - The module is a container for multiple resources that are used together.
@@ -158,29 +158,3 @@ How to create AKS cluster using Hashicorp Terraform as per the Wesco Standards. 
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs) - utility to generate docs from terraform modules
 - [tfsec](https://github.com/aquasecurity/tfsec) - Terraform static analysis tool
 - [tflint](https://github.com/terraform-linters/tflint) - Terraform linter for detecting errors that can not be detected by terraform plan
-
-<!-- BEGIN_TF_DOCS -->
-## Requirements
-
-No requirements.
-
-## Providers
-
-No providers.
-
-## Modules
-
-No modules.
-
-## Resources
-
-No resources.
-
-## Inputs
-
-No inputs.
-
-## Outputs
-
-No outputs.
-<!-- END_TF_DOCS -->
